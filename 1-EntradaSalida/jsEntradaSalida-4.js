@@ -4,6 +4,10 @@
 */
 function Mostar()
 {
+	var dato;
+	dato=prompt("dato");
+	dato("ByElementMyId");
+
 	
 }
 
