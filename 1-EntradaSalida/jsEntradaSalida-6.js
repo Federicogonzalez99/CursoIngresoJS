@@ -5,9 +5,10 @@ function sumar()
 {
     var num1;
     var num2;
+    var suma;
     num1=document.getElementById("numeroUno").value;
     num2=document.getElementById("numeroDos").value;
-    var suma = parseInt(num1) + parseInt(num2);
+    suma = parseInt(num1) + parseInt(num2);
     alert("La suma es: " +suma);
 }
 
