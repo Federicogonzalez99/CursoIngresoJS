@@ -5,8 +5,9 @@
 function Mostar()
 {
 	var dato;
-	dato=prompt("dato");
-	dato("ByElementMyId");
+	dato=prompt("Ingrese Dato");
+	document.getElementById(dato);
+
 
 	
 }
