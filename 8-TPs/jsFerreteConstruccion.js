@@ -19,9 +19,22 @@ function Rectangulo ()
 }
 function Circulo () 
 {
+    var radio;
+    var perimetro;
+    radio=document.getElementById("Radio").value;
+    perimetro=2*3.14*parseInt(radio);
+    alert("Voy a necesitar: " +perimetro  +"de alambre");
+
 	
 }
 function Materiales () 
 {
+    var largo;
+    var ancho;
+    var cemento;
+    var cal;
+    largo=document.getElementById("Largo").value;
+    ancho=document.getElementById("Ancho").value;
+    cemento
 	
 }
