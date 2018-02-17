@@ -12,6 +12,11 @@ var contadorIntentos;
 
 function comenzar()
 {
+  
+  var numeroSecreto
+  numeroSecreto=nota=Math.floor((Math.random()*(101-1)))+1;
+  console.log(numeroSecreto);
+  
 	//Genero el número RANDOM entre 1 y 100
 	 
 		//alert(numeroSecreto );
@@ -21,6 +26,14 @@ function comenzar()
 
 function verificar()
 {
+  
+  var numero; 
+  numero=document.getElementById("numero").value;
+  if("numero"==numeroSecreto)
+  {
+    alert("Usted es ganador")
+  }
+  
 	
 	
 }
