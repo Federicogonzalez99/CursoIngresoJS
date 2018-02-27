@@ -1,7 +1,12 @@
 //Debemos lograr mostrar un mensaje al presionar el botón  'MOSTRAR'.
 function Mostrar()
 {
-	alert("Funciona 8-iteraciones");
+	if(num%2==0)
+	{
+		contpares++
+	}
+	alum+=num;
+	cont++;
 	
 }
 

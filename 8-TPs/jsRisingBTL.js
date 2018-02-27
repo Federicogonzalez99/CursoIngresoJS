@@ -16,17 +16,7 @@ function ComenzarIngreso ()
     var legajo;
     var nacionalidad;
     var sueldomaxnac;
-     if(nacionalidad=="N")
-    {
-        if(sueldo>sueldomaxnac)
-        {
-            sueldomaxnac=sueldo;
-            console.log(+sueldo)
-        }
-    }
-    
-    
-   
+     
     edad=prompt("Ingrese su edad");
     if (edad>=18&&edad<=90)
     {
