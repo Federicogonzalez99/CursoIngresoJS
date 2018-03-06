@@ -1,13 +1,14 @@
 function Mostrar()
 {
     var importe;
-    var final;
-    var impdes;
-    importe=prompt("importe");
-    parseInt=importe;
-    final=(importe*25)/100;
-    impdes=importe-final;
-    document.getElementById("importeFinal").value=impdes;
+    var impFinal;
+    var impDes;
+    importe=prompt("Ingrese un importe: ");
+    importe=parseInt(importe);
+    impFinal=parseInt(importe)*0.25;
+    impDes=parseInt(importe)-parseInt(impFinal)
+    document.getElementById("importeFinal").value=impDes;
+
 
 
   

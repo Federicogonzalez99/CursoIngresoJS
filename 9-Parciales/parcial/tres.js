@@ -5,10 +5,10 @@ function Mostrar()
     var perimetro;
     largo=document.getElementById("alrgo").value;
     ancho=document.getElementById("ancho").value;
-    parceInt=largo;
-    parceInt=ancho;    
+    largo=parseInt(largo);
+    ancho=parseInt(ancho);   
     perimetro=(largo*2+ancho*2)*3;
-    alert(perimetro);
+    alert("El periemtro es: " +perimetro);
 
 
 
