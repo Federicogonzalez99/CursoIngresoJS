@@ -1,41 +1,42 @@
 //Debemos lograr mostrar un mensaje al presionar el botón  'MOSTRAR'.
 function Mostrar()
 {
-	var acum=0,cont=0,contv=0;
-	var nota;
-	var num;
+	var notas;
 	var sexo;
-	nota=prompt("Ingrese las notas");
-	while(nota<0||nota>10)
-	{
-		num=prompt("Error.Ingrese las notas");
-		num=parseInt(num);
-	}
-	while(sexo!="F"&&sexo!="M")
-	{
-		sexo=prompt("Ingrese el sexo nuevamente");
+	var contAlumnos=0;
+	var acumNota=0;
+	var contVarones=0;
+	var notaMin=0;
+	var primeravez=true		
 
-	}
-	cont++
-	acum+=nota;
-	if(cont==1)
-	{
-		min=nota
-	}
-	else
-	{
-		if(nota<min)
-		{
-			min=nota;
+	while(contAlumnos<7){
+		console.log(contAlumnos);
+		 notas=prompt("Ingrese una nota");
+		 notas=parseInt(notas);
+		while(notas<=0||notas>10){
+			notas=prompt("Error. Ingrese una nota entre 1 y 10");
+			notas=parseInt(notas);
 		}
+	 sexo=prompt("Ingrese el sexo (f o m)");
+	 while(sexo!="f" && sexo!="m"){
+		sexo=prompt("Sexo incorrecto. Ingrese (f o m)");
+	 }
+	 if(notas>=6 && sexo=="m"){
+		contVarones=contVarones+1;
+	 } 
+	 if(primeravez){
+		 primeravez=false;
+		 notaMin=notas;
+	 }
+	 else if(notas<notaMin){
+		 notaMin=notas;
+	 }
+	 contAlumnos= contAlumnos + 1;
+	 acumNota=acumNota+notas;
 	}
-	if(sexo=="M"&&nota>6)
-	{
-		contv++;
-	}
-	console.log ("contador de varones" +contv)
-	console.log("nota"+nota)
-	console.log("baja"+min)
+	alert("El promedio de las notas totales es de: " +acumNota/contAlumnos);
+	alert("La nota mas baja es: " +notaMin);
+	alert("Los cantidad de varones que su nota fue mayor o igual a 6 fueron: " +contVarones)
 	
 }
 

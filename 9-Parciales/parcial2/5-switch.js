@@ -21,6 +21,8 @@ function Mostrar()
 		case "Diciembre":
 						alert("Extraño enero y febrero!!!")
 						break;
+		default:
+		 		alert("No es un mes del año");						
 
 	}
 	

@@ -4,9 +4,9 @@ function Mostrar()
 	var importe;
 	var preciof;
 	importe=prompt("Ingrese un importe");
-	parseInt=importe;
+	importe=parseInt(importe);
 	preciof=importe*1.21;
-	alert("El importe +iva es: " +preciof);
+	document.getElementById("importe").value=preciof;
 
 	
 }

@@ -6,7 +6,7 @@ function Mostrar()
 	base=document.getElementById("lado").value;
 	perimetro=base*3
 
-	alert(+perimetro);
+	alert("El perimetro es: " +perimetro);
 	
 }
 

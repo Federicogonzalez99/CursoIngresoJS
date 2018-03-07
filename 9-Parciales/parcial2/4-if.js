@@ -24,7 +24,7 @@ function Mostrar()
 		resta=parseInt(numero1)-parseInt(numero2);
 		document.write(+resta);
 		}
-		else if(numero2>numero1)
+		else 
 		{
 			numero2=parseInt(numero2);
 			numero1=parseInt(numero1);
