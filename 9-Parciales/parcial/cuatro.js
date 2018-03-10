@@ -5,28 +5,28 @@ function Mostrar()
     var multiplicar;
     var resta;
     var suma;
+    var mensaje;
     if(numero1==numero2)
     {
-        numero1=parseInt(numero1);
-        numero2=parseInt(numero2);
+        
         multiplicar=parseInt(numero1)*parseInt(numero2);
-        document.write(+multiplicar);
+        mensaje=multiplicar
+        
     }
-    else if(numero1>numero2)
+    else 
     {
-        numero1=parseInt(numero1);
-        numero2=parseInt(numero2);
+        if(numero1>numero2){
+        
         resta=parseInt(numero1)-parseInt(numero2)
-        document.write(+resta)
+        mensaje=resta;
+        
     }   
-    else
-    {
-        numero1=parseInt(numero1);
-        numero2=parseInt(numero2);
-        suma=parseInt(numero1)+parseInt(numero2)
-        document.write(+suma)
+    
+   
+        
+        
 
-    }
-
+    
+    alert(mensaje)
 
 }
