@@ -11,7 +11,7 @@ function Mostrar()
         console.log(contdias)
         importe=prompt("Ingrese un importe:");
         importe=parseInt(importe);
-        while(importe<0)
+        while(importe<0||isNaN(importe))
         {
             importe=prompt("Ingrese un importe mayor a 0");
             importe=parseInt(importe);
@@ -34,8 +34,9 @@ function Mostrar()
             }
         }
         contdias=contdias + 1
-        alert("El mayor importe de la semana fue " +mayorimp +"Y el menor importe fue " +minimp)
+        
 
     }
+    alert("El mayor importe fue"  +mayorimp  +" y el menor importe fue " +minimp);
 
 }

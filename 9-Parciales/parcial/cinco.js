@@ -18,6 +18,7 @@ function Mostrar()
         case "19":
         case "20":
                 alert("Tarde de mate!!!");
+
                 break;
         case "21":
         case "22":
@@ -30,6 +31,10 @@ function Mostrar()
         case "5":
         case "6":
                 alert("Es de noche!!!");
+                if(hora>24||hora<7)
+                {
+                        alert("Me voy a un bar");
+                }
                 break;
         case "7":
         case "8":
@@ -37,28 +42,12 @@ function Mostrar()
         case "10":
         case "11":
                 alert("Es de mañana!!!");
+                if(hora<11){
+                        alert("a desayunar");
+                }
                 break;                
 
-    }
-    
    
-    var dia=prompt("Ingrese un dia de la semana: ");
-    switch(dia)
-    {
-        case "Sabado":
-        case "Domingo": 
-                    alert("Es fin de semana!!!")
-                    break;
-        case "Lunes":
-        case "Martes":
-        case "Miercoles":
-        case "Jueves":
-        case "Viernes":
-                        alert("A trabajar!!!")
-                        break;
-        default:
-                alert("No es un dia de la semana")                            
-        
-    }
 
+}
 }
