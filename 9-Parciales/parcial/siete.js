@@ -12,7 +12,7 @@ function Mostrar()
         console.log(contAlumn);
         nota=prompt("Ingrese una nota: ");
         nota=parseInt(nota);
-        while(nota<=0||nota>10){
+        while(nota<=0||nota>10||isNaN(nota)){
             nota=prompt("Ingrese una nota mayor a 0 y menor a 10. ");
             nota=parseInt(nota);
         }

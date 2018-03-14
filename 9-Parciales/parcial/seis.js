@@ -26,14 +26,24 @@ function Mostrar()
         {
             if(importe<=minimp)
             {
+                
                 minimp=importe;
+                nombremin=nombre;
             }
             else if(importe>mayorimp)
             {
+                
                 mayorimp=importe;
+                mayornombre=nombre;
             }
         }
         contdias=contdias + 1
+        //if(numero%2==0 && !=0){
+        //contnumeropar=contnumeropar+1
+        //}else{
+        // if(numero!=0)    
+        // contnumeroimpar=contnumeroimpar+1
+        //}
         
 
     }

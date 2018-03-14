@@ -45,7 +45,9 @@ function Mostrar()
                 if(hora<11){
                         alert("a desayunar");
                 }
-                break;                
+                break;  
+        default:
+                alert("No es una hora del dia");              
 
    
 

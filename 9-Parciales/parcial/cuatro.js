@@ -17,7 +17,7 @@ function Mostrar()
             mensaje=numero1-numero2;
         }
         else{
-            mensaje=mensaje*2;
+            mensaje=numero1+numero2;
         }
     }  
     alert(mensaje);
